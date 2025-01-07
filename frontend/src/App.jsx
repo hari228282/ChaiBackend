@@ -9,7 +9,7 @@ function App() {
   const [jokes, setJokes] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:4000/jokeskapitara')
+    axios.get('/api/jokeskapitara')
       .then((response) => {
       setJokes(response.data)
       })
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <h1>Welcome To Hariom Bhojnalaya</h1>
+      <h1>Welcome To Hariom Bhojnalaya and namaste and Hari Bhog</h1>
       <p>jokesData: {jokes.length}</p>
 
       {

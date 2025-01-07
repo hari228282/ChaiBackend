@@ -2,6 +2,7 @@ const express = require('express') //todo common js module
 // import express from 'express'; //todo ES6 Module 2015
 require('dotenv').config()
 const app = express()
+app.use(express.static('dist')); //todo middleware
 const port = 4000
 
 
@@ -85,7 +86,7 @@ app.get("/githubprofile", (req, res) => {
     res.send(githubProfile);
 })
 
-app.get("/jokesKaPitara", (req, res) => {
+app.get("/api/jokesKaPitara", (req, res) => {
     res.send(jokes);
 })
 
