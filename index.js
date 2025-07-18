@@ -90,6 +90,10 @@ app.get("/api/jokesKaPitara", (req, res) => {
     res.send(jokes);
 })
 
+app.get("/simran", (req , res) => {
+    res.send("Hello this is creative idea")
+})
+
 app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${port}`)
 })
