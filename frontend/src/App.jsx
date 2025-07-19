@@ -9,7 +9,7 @@ function App() {
   const [jokes, setJokes] = useState([])
 
   useEffect(() => {
-    axios.get('/api/jokeskapitara')
+    axios.get('/api/jokesKaPitara')
       .then((response) => {
       setJokes(response.data)
       })
